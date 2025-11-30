@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<header>
+ <img src="file.html/logo.jpg>
+</header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional personal webpage of Pastory Amsy Rajabu, Agricultural Consultant.">
+    <meta name="author" content="Pastory Amsy Rajabu">
+    <title>Who is the real me?</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS for Modern Design -->
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: #0044cc;
+            color: #fff;
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            position: relative;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            margin: 0.5rem 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #003399;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            padding: 2rem 0;
+        }
+
+        h2 {
+            color: #0044cc;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .about p, .services ul, .contact p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            background-color: #e3e9ff;
+            margin: 0.5rem 0;
+            padding: 0.8rem 1rem;
+            border-radius: 6px;
+        }
+
+        .contact-info a {
+            color: #0044cc;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            color: #ff6600;
+        }
+
+        form {
+            max-width: 700px;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form button {
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #0044cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background-color: #003399;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0044cc;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header>
+        <!-- Replace src with your photo -->
+        <img src="https://via.placeholder.com/150" alt="Pastory Amsy Rajabu">
+        <h1>Who is the real me??</h1>
+        <p>Welcome on behalf of my services</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I am <strong>Pastory Amsy Rajabu</strong>, 23 years old, an <strong>Agricultural Consultant</strong>. I provide professional consulting services to help farmers and businesses improve productivity and efficiency in agriculture. You are welcome to explore my services and get in touch with me for advice and guidance.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Agricultural Consultation and Advisory</li>
+                <li>Crop Management and Optimization</li>
+                <li>Farm Productivity Improvement</li>
+                <li>Agro-Business Guidance</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p class="contact-info">
+                If you want to find me, click to this email address: 
+                <a href="mailto:pastoryamasy5@gmail.com">pastoryamasy5@gmail.com</a><br>
+                Or call me through: 
+                <a href="tel:+255683642048">+255 683 642 048</a>
+            </p>
+            <form action="#" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pastory Amsy Rajabu. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
